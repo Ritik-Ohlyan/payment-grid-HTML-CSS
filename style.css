@@ -1,0 +1,182 @@
+                            /* - Mobile: 375px
+                            - Desktop: 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+                /* font-family: 'Karla', sans-serif; */
+                /*  Weights: 400, 700 */
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+.container{
+    margin: 4em 2em 2em;
+    box-shadow: 0px 2px 15px rgba(146, 146, 146, 0.712);
+}
+
+            /* typoraphy */
+
+.typo{
+    padding: 20px 0 0 30px;
+}
+
+            /* hero */
+
+.hero{
+    height: 19em;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.hero h1{
+    font-weight: 700;
+    color: var(--Cyan);
+    font-size: 23px;
+    margin: 0 0 1.5em;
+}
+
+.hero h2{
+    color: var(--Bright-Yellow);
+    font-size: 17px;
+    margin: 0 20px 1.5em 0;
+}
+
+.hero p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: 2em;
+}
+
+                    /* payment */
+
+.payment{
+    background-color: var(--Cyan);
+    height: 15em;
+
+}
+
+.payment h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+
+span{
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+}
+
+.price{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.644);
+    margin: 0 0 10px 0;
+}
+
+.payment-sub-line{
+    color: var(--Light-Gray);
+    margin: 0 0 3em 0;
+}
+
+.payment a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 100px;
+    background-color: var(--Bright-Yellow);
+    box-shadow: 0px 2px 10px rgb(117, 117, 117);
+}
+
+.payment a:hover,.payment a:focus{
+    box-shadow: 0px 4px 30px rgba(82, 82, 82, 0.664);
+    transition: ease-in-out 456ms;
+    /* background-color:  rgb(209, 209, 82);
+    padding: 20px 100px 10px; */
+}
+
+.btn{
+    text-align: center;
+}
+
+                    /* why us */
+
+.why-us-part{
+    background-color: hsl(179, 44%, 58%);
+    color: var(--Light-Gray);
+    height: 15em;
+}
+
+.why-us-part h2{
+    font-size: 18px;
+    margin: 0 0 1em 0;
+}
+
+.why-us-part p{
+    margin-right: 4em;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+          /* footer */
+.attribution { font-size: 15px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+            /* Media quaries */
+
+@media (min-width:1200px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 12em 20em 2em;
+    }
+
+    .hero{
+        height: 17em;
+        grid-column: span 2;
+    }
+
+    .hero h1{
+        font-size: 2em;
+        margin-left: 20px;
+        margin-top: 30px;
+        
+    }
+
+    .hero h2{
+        font-size: 1.3em;
+        margin-left: 20px;
+    }
+
+    .hero p{
+        margin-right: 12em;
+        margin-left: 20px;
+    }
+
+    .payment{
+        border-radius: 0 0 0 10px;
+    }
+
+    .why-us-part{
+        border-radius: 0 0 10px 0;
+    }
+
+}
